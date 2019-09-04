@@ -40,11 +40,6 @@ public class Partie {
 
 
 
-
-
-
-
-
         switch (role) {
             case 1:
                 return new Guerrier(niveau, force, agilite, intelligence, numero);
@@ -55,7 +50,6 @@ public class Partie {
         }
 
     }
-
 
     public void debut() {
         Joueur joueur1;

@@ -15,6 +15,10 @@ public class Mage extends Joueur {
         super(niveau, force, agilite, intelligence, numero);
     }
 
+    /**
+     * Attaque basique
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_basique(Joueur adversaire) {
         int dommages = this.getIntelligence();
@@ -24,6 +28,10 @@ public class Mage extends Joueur {
 
     }
 
+    /**
+     * Attaque spéciale
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_speciale(Joueur adversaire) {
         int gagne = 2*this.getIntelligence();
@@ -40,6 +48,10 @@ public class Mage extends Joueur {
 
     }
 
+    /**
+     * Récupération vie
+     * @param vie
+     */
     @Override
     public void setVie(int vie) {
         if (vie>5*this.getNiveau()){

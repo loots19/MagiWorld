@@ -16,6 +16,10 @@ public class Guerrier extends Joueur {
         super(niveau, force, agilite, intelligence, numero);
     }
 
+    /**
+     *Attaque basique
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_basique(Joueur adversaire) {
         int dommages = this.getForce();
@@ -26,6 +30,10 @@ public class Guerrier extends Joueur {
 
     }
 
+    /**
+     *Attaque spéciale
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_speciale(Joueur adversaire) {
         int dommages = 2*this.getForce();
@@ -35,6 +43,9 @@ public class Guerrier extends Joueur {
 
     }
 
+    /**
+     * description du personnage
+     */
     @Override
     public void look() {
         System.out.println(" Woarg je suis le Guerrier joueur "  +  getNumero() +  " niveau "  +  niveau  +  " je possède "  +  vie  +  " de vitalité "  +  force  +  " de force "

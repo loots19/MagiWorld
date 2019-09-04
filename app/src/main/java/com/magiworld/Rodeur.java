@@ -15,6 +15,10 @@ public class Rodeur extends Joueur {
         super(niveau, force, agilite, intelligence, numero);
     }
 
+    /**
+     *Attaque basique
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_basique(Joueur adversaire) {
         int dommages = this.getAgilite();
@@ -24,6 +28,10 @@ public class Rodeur extends Joueur {
 
     }
 
+    /**
+     *Attaque spéciale
+     * @param adversaire adversaire inflingé par l'attaque
+     */
     @Override
     public void attaquer_speciale(Joueur adversaire) {
         int gagne = this.getNiveau()/2;
@@ -33,6 +41,9 @@ public class Rodeur extends Joueur {
 
     }
 
+    /**
+     * description du personnage
+     */
     @Override
     public void look() {
         System.out.println("coucou je suis le Rôdeur joueur " + getNumero() + " niveau " + niveau + " je possède " + vie + " de vitalité " + force + " de force "
