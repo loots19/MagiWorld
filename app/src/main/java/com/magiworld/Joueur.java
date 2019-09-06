@@ -1,7 +1,7 @@
 package com.magiworld;
 
 public abstract class Joueur {
-    protected int niveau;
+    private  int niveau;
     protected int vie;
     protected int force;
     protected int agilite;
@@ -28,13 +28,13 @@ public abstract class Joueur {
      * Attaquer basique
      * @param adversaire adversaire inflingé par l'attaque
      */
-    public abstract void attaquer_basique(Joueur adversaire);
+    public abstract void attaquerBasique(Joueur adversaire);
 
     /**
      * Attaquer spéciale
      * @param adversaire adversaire inflingé par l'attaque
      */
-    public abstract void attaquer_speciale(Joueur adversaire);
+    public abstract void attaquerSpeciale(Joueur adversaire);
 
     /**
      * Imprimer l'information sur le personnage

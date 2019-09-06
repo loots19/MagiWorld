@@ -21,7 +21,7 @@ public class Guerrier extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_basique(Joueur adversaire) {
+    public void attaquerBasique(Joueur adversaire) {
         int dommages = this.getForce();
         adversaire.setVie(adversaire.getVie()-dommages);
         System.out.println(" Joueur " + this.getNumero() + " utilise Coup d'Épée et inflinge " + dommages);
@@ -35,7 +35,7 @@ public class Guerrier extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_speciale(Joueur adversaire) {
+    public void attaquerSpeciale(Joueur adversaire) {
         int dommages = 2*this.getForce();
         adversaire.setVie(adversaire.getVie()-dommages);
         System.out.println(" Joueur " + this.getNumero() + " utilise Coup de rage et inflige " + dommages);
@@ -48,7 +48,7 @@ public class Guerrier extends Joueur {
      */
     @Override
     public void look() {
-        System.out.println(" Woarg je suis le Guerrier joueur "  +  getNumero() +  " niveau "  +  niveau  +  " je possède "  +  vie  +  " de vitalité "  +  force  +  " de force "
+        System.out.println(" Woarg je suis le Guerrier joueur "  +  getNumero() +  " niveau "  +  getNiveau()  +  " je possède "  +  vie  +  " de vitalité "  +  force  +  " de force "
         + agilite + " d'agilité " + intelligence + " et d 'intelligence ");
 
 

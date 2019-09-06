@@ -20,7 +20,7 @@ public class Rodeur extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_basique(Joueur adversaire) {
+    public void attaquerBasique(Joueur adversaire) {
         int dommages = this.getAgilite();
         adversaire.setVie(adversaire.getVie()-dommages);
         System.out.println("Joueur " + this.getNumero() + " utilise Tir à l'Arc et inflinge " + dommages + " dommages");
@@ -33,7 +33,7 @@ public class Rodeur extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_speciale(Joueur adversaire) {
+    public void attaquerSpeciale(Joueur adversaire) {
         int gagne = this.getNiveau()/2;
         this.setAgilite(this.getAgilite()+ gagne);
         System.out.println(" Joueur " + this.getNumero() + " concentration " + gagne);

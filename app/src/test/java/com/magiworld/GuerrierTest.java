@@ -11,7 +11,7 @@ public class GuerrierTest {
 
     @Test
     public void Given_GuerrierForce_When_Attaquer_BasiqueSelected_Then_RemoveGoodAmountOfLifeToJoueur2WithoutChangeLifeOfJoueur1() {
-        joueur1.attaquer_basique(joueur2);
+        joueur1.attaquerBasique(joueur2);
         assertEquals(40, joueur2.getVie());
         assertEquals(50, joueur1.getVie());
     }
@@ -19,7 +19,7 @@ public class GuerrierTest {
 
     @Test
     public void Given_GuerrierForce_When_attaquer_speciale_Then_Joueur2looseLifeAmountGuerrierAndJoueur1_RemoveAlfAmountOfLife() {
-        joueur1.attaquer_speciale(joueur2);
+        joueur1.attaquerSpeciale(joueur2);
         assertEquals(50,joueur2.getVie());
         assertEquals(25,joueur1.getVie());
 

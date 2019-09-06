@@ -20,7 +20,7 @@ public class Mage extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_basique(Joueur adversaire) {
+    public void attaquerBasique(Joueur adversaire) {
         int dommages = this.getIntelligence();
         adversaire.setVie(adversaire.getVie()-dommages);
         System.out.println(" Joueur " + this.getNumero() + " utilise Boule de feu et inflinge " + dommages + " dommages ");
@@ -33,7 +33,7 @@ public class Mage extends Joueur {
      * @param adversaire adversaire inflingé par l'attaque
      */
     @Override
-    public void attaquer_speciale(Joueur adversaire) {
+    public void attaquerSpeciale(Joueur adversaire) {
         int gagne = 2*this.getIntelligence();
         this.setVie(this.getVie() + gagne);
         System.out.println(" Joueur " + this.getNumero() + " utilise Soin " );

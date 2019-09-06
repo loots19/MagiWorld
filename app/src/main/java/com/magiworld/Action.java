@@ -20,8 +20,8 @@ public class Action {
                 System.out.println(" Joueur 1 (" + joueur1.getVie() + " Vitalité) veuillez choisir votre action (1: Attaque basique, 2: Attaque spéciale)");
                 j = scanner.nextInt();
             } while (j != 1 && j != 2);
-            if (j == 1) joueur1.attaquer_basique(joueur2);
-            if (j == 2) joueur1.attaquer_speciale(joueur2);
+            if (j == 1) joueur1.attaquerBasique(joueur2);
+            if (j == 2) joueur1.attaquerSpeciale(joueur2);
 
             if (joueur1.estMort()) {
                 System.out.println(" Joueur 1 est mort ");
@@ -37,8 +37,8 @@ public class Action {
                 System.out.println(" Joueur 2 (" + joueur2.getVie() + " Vitalité) veuillez choisir votre action (1: Attaque basique, 2: Attaque spéciale)");
                 j = scanner.nextInt();
             } while (j != 1 && j != 2);
-            if (j == 1) joueur2.attaquer_basique(joueur1);
-            if (j == 2) joueur2.attaquer_speciale(joueur1);
+            if (j == 1) joueur2.attaquerBasique(joueur1);
+            if (j == 2) joueur2.attaquerSpeciale(joueur1);
 
             if (joueur1.estMort()) {
                 System.out.println(" Joueur 1 est mort ");
